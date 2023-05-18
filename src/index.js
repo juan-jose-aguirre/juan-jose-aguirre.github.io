@@ -3,11 +3,55 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import Login from './components/Login';
+import ErrorPage from './components/ErrorPage';
+import Admin from './components/Administracion';
+import AdminProductos from './components/Administracion/AdminProductos';
+import AdminCategorias from './components/Administracion/AdminCategorias';
+import FormCrearCate from './components/Administracion/FormCrearCate';
+import Exitoso from './components/Administracion/Exitoso';
+
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/login",
+    element: <Login/>
+  },
+  {
+    path: "/admin",
+    element: <Admin/>
+  },
+  {
+    path: "/admin_productos",
+    element: <AdminProductos/>
+  },
+  {
+    path: "/admin_categorias",
+    element: <AdminCategorias/>
+  },
+  {
+    path: "/form_crear_categorias",
+    element: <FormCrearCate/>
+  },
+  {
+    path: "/exitoso",
+    element: <Exitoso/>
+  }
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
