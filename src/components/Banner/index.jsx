@@ -4,7 +4,7 @@ import banner from '../../assets/banner.svg'
 
 const Banner = () => {
   return (
-    <div id='banner'>
+    <div className='banner'>
       <img src={banner} alt="Banner" />
     </div>
   )

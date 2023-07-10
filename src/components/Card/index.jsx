@@ -1,23 +1,30 @@
 import React from 'react'
 import categorias from '../../assets/categorias';
+import ModalProducto from './ModalProducto';
+import { Link } from 'react-router-dom';
 
-const Card = ({name}) => {
-    // console.log(name);
-    // console.log(categorias);
-    // const rutaImgCategoria = `../../assets/categorias-${name}.png`;
-    
-    // const categorias = {
-    //     tornilleria: 'categoria-tornilleria',
-    //     aerosoles: 'categoria-aerosoles',
-    //   };
 
-    //   const imagenSrc = `../../assets/${categorias[props.name]}.svg`;
+
+const Card = ({nombre, id, imagen, descripcion}) => {
+
 
   return (
-    <div className='tarjetas'>
-        <img className='imagen-tarjetas' src={categorias[name]} alt="hi" />
-        <div className='nombre-tarjetas'>{name.toUpperCase()}</div>
-    </div>
+    <>
+    {imagen ? 
+    <>
+      <div className='tarjetas'>
+        <img className='imagen-tarjetas' src={imagen} alt="" />
+        <div className='nombre-tarjetas'><ModalProducto nombre={nombre} imagen={imagen} descripcion={descripcion}/></div>
+      </div>
+    </>
+    :
+    <>
+      <div className='tarjetas'>
+        <img className='imagen-tarjetas' src={categorias[nombre.toLowerCase()]} alt="" />
+        <Link to={`/categoria/${nombre}/${id}#productos`} className='nombre-tarjetas fw-bold text-dark'>{nombre.toUpperCase()}</Link>
+      </div>
+    </>}
+    </>
   )
 }
 

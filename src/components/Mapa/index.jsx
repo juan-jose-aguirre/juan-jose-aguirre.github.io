@@ -4,7 +4,7 @@ import {GoLocation} from 'react-icons/go'
 const Mapa = ({texto}) => {
   return (
     <div>
-        <a id="texto-ubicacion" href="#"><GoLocation id="icono-ubicacion"/>{texto}</a>
+        <a id="texto-ubicacion" href="https://goo.gl/maps/vk5m9ypmumHrKcXE6"><GoLocation id="icono-ubicacion"/>{texto}</a>
       <div id="contenedor-mapa">
         <iframe
           id="mapa"

@@ -8,7 +8,7 @@ const Aliados = () => {
   const imagenes = [papeleria, distriarte, centropor];
 
   return(
-    <Carrusel arreglo={imagenes} />
+    <Carrusel id="carrusel2"  arreglo={imagenes} />
   )
 };
 

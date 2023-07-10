@@ -5,15 +5,18 @@ import Login from '../Login';
 import {AiOutlineSearch} from "react-icons/ai"
 import {IoIosArrowBack} from 'react-icons/io'
 import BtnCerrarSesion from './BtnCerrarSesion';
-import {GoPlus} from 'react-icons/go'
 import { Link } from 'react-router-dom';
 import { collection, onSnapshot, query } from 'firebase/firestore';
 import Tabla from '../Tabla';
+import ModalCreaCate from './ModalCreaCate';
+
 
 
 const AdminCategorias = () => {
-  const [user, setUser] = useState(null)
-  const [categorias, setCategorias] = useState([])
+
+  const [user, setUser] = useState(null) //Se crea esta variable para verificar si el ususario ingreso corectamente las credenciales
+
+  const [categorias, setCategorias] = useState([]) //La variable nos servira para almacenar todas la categorias existentes
 
   useEffect(()=>{
     auth.onAuthStateChanged((usuarioFirebase)=>{
@@ -28,19 +31,18 @@ const AdminCategorias = () => {
       setCategorias(categoriasArr);
     })
     return () => unsubscribe()
-  } , [] )
+  } , [] ) //Cada vez que se carge el componente, se valida el usuario y tambien se le solicita a firebase por medio de una promesa, el arreglo de objetos de categorias
 
   return (
     <>
-    {user? 
+    {/*Validamos si el usuario existe, en caso de ser verdadero, se podra trabajar el CRUD, en caso contrario se mostrara el formulario de Login*/user? 
     <div className='contenedor-crud'>
       <header className='header-crud'><Link to={"/admin"}><IoIosArrowBack className='btn-atras'/></Link><h2 className='fs-1 text-white fw-bold'>Categorias</h2><BtnCerrarSesion/></header>
       <main className='pt-5 pb-5 d-flex justify-content-evenly align-self-center text-dark'>
-        <AiOutlineSearch className='bg-white border-0 rounded-pill fs-1'/>
-        <Link to={"/form_crear_categorias"}><GoPlus className='text-dark fs-1 bg-white border-0 rounded-pill'/></Link>
+        <div></div><ModalCreaCate campo={"nombre_cate"} objeto={categorias}/>
       </main>
       <footer>
-        <Tabla mostrar={["nombre_cate"]} objeto={categorias}/>
+        <Tabla columnas={["Nombre"]} mostrar={["nombre_cate"]} objeto={categorias}/>
       </footer>
     </div>:<Login/>}
     </>

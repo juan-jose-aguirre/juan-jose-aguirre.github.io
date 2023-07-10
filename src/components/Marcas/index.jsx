@@ -8,7 +8,7 @@ const Marcas = () => {
   const imagenes = [uduke, cintandina, hoyostools];
 
   return(
-    <Carrusel arreglo={imagenes} />
+    <Carrusel id="carrusel1" arreglo={imagenes} />
   )
 };
 

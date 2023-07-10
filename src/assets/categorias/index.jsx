@@ -4,6 +4,6 @@ export default {
     aerosoles: require('./categoria-aerosoles.png'),
     herramientas: require('./categoria-herramientas.png'),
     electricos: require('./categoria-electricos.png'),
-    todos: require('./categoria-todos.png')
+    otros: require('./categoria-otros.png')
   }
   

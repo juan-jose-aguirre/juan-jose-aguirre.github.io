@@ -26,17 +26,17 @@
     padding-top: .5rem;
 }
 
-#banner{
+.banner{
     padding-top: 7vh;
 }
-#banner img{
+.banner img{
     position: relative;
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-#elipse-2000{
+.elipse-2000{
     position: relative;
     top: -6vh;
     width: 100%;
@@ -54,14 +54,14 @@
 }
 
 
-#btn-accion{
+.btn-accion{
     display: flex;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     padding-bottom: 10vh;
 }
-#btn-cuerpo{
+.btn-cuerpo{
     background-color: green;
     display: flex;
     justify-content: center;
@@ -73,15 +73,13 @@
     color: white;
     box-shadow: 0 .4rem 1rem 0 grey;
 }
-#text-cuerpo{
-    position: relative;
-}
-#seccion-productos{
+
+.seccion-productos{
     position: relative;
     background-color: green;
     
 }
-#elipse-productos{
+.elipse-productos{
     background-color: green;
     position: absolute;
     top: -4.8vh;
@@ -98,7 +96,7 @@
     padding-top: 2rem;
     box-shadow: 0 -.1rem .1rem 0 black;
 }
-#articulo-categorias{
+.articulo-categorias{
     position: relative;
     padding-top: 10vh;
     display: flex;
@@ -117,6 +115,8 @@
 .imagen-tarjetas{
     border: 2px solid white;
     border-radius: 15px;
+    width: 260px;
+    height: 200px;
 }
 .nombre-tarjetas{
     position: absolute;
@@ -128,7 +128,6 @@
     width: 100%;
     height: 30%;
     font-size: 1.5rem;
-    font-weight: bold;
     border-radius: 15px;
     background-color: white;
 }
@@ -153,7 +152,24 @@
     position: relative;
     padding-bottom: 10vh;
 }
-#elipse-marcas{
+.elipse-marcas{
+    position: relative;
+    top: -7vh;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 100%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    padding-top: 2rem;
+    box-shadow: 0 -.1rem .1rem 0 rgb(27, 25, 25);
+}
+
+.elipse-contactanos{
     position: relative;
     top: -7vh;
     width: 100%;
@@ -197,7 +213,7 @@
     position: relative;
 }
 
-#elipse-ubicacion{
+.elipse-ubicacion{
     position: relative;
     top: -4.5vh;
     width: 100%;
@@ -249,7 +265,7 @@
     background-color: white;
     margin-bottom: 3rem;
 }
-#elipse-aliados{
+.elipse-aliados{
     position: relative;
     top: -4.5vh;
     width: 100%;
@@ -270,7 +286,7 @@ footer{
     position: relative;
     height: 8vh;
 }
-#elipse-aguirre{
+.elipse-aguirre{
     position: absolute;
     top: -6vh;
     width: 100%;
@@ -400,7 +416,7 @@ input[type="submit"]{
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .exitoso{
@@ -410,6 +426,7 @@ input[type="submit"]{
 .contenedor-tabla{
     width: 80%;
     margin: 0 10%;
+    max-height: 50vh;
 }
 .bg-green{
     background-color: green;
