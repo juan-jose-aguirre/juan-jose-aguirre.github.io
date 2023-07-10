@@ -2,6 +2,7 @@
   "name": "ferrocentro",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http:/juan-jose-aguirre.github.io/copia_ferrocentro",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,7 @@
     "@mui/material": "^5.13.2",
     "bootstrap": "^5.2.3",
     "firebase": "^9.21.0",
+    "gh-pages": "^5.0.0",
     "mui-datatables": "^4.3.0",
     "react-bootstrap": "^2.7.4",
     "react-data-table-component": "^7.5.3",
