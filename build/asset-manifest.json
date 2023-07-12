@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.390e60e0.css",
+    "main.js": "/static/js/main.b3e2635d.js",
+    "static/js/787.b75b6956.chunk.js": "/static/js/787.b75b6956.chunk.js",
+    "static/media/banner.svg": "/static/media/banner.e6f1def8b70a4357e86662fdc2113218.svg",
+    "static/media/marca-uduke.png": "/static/media/marca-uduke.b9be4542a01c91249c1f.png",
+    "static/media/categoria-otros.png": "/static/media/categoria-otros.14539c38b05bdbd0f227.png",
+    "static/media/categoria-tornilleria.png": "/static/media/categoria-tornilleria.826b176633e810fb0b26.png",
+    "static/media/categoria-electricos.png": "/static/media/categoria-electricos.1f4c04b733b16c9c715a.png",
+    "static/media/categoria-herramientas.png": "/static/media/categoria-herramientas.8eb02fec96b4ca59cbaf.png",
+    "static/media/aliado-papeleria.png": "/static/media/aliado-papeleria.3fe3e761eca5c5b689bc.png",
+    "static/media/marca-hoyostools.png": "/static/media/marca-hoyostools.d86b7fa18c26cc12f49c.png",
+    "static/media/categoria-aerosoles.png": "/static/media/categoria-aerosoles.c961b06ebca93cff78b5.png",
+    "static/media/aliado-centropor.png": "/static/media/aliado-centropor.1913233aed6e22a16b7e.png",
+    "static/media/marca-cintandina.png": "/static/media/marca-cintandina.715c441bc9fbfd7c6712.png",
+    "static/media/aliado-distriarte.png": "/static/media/aliado-distriarte.c359a6ccafbc30212f9c.png",
+    "static/media/telefono-fijo.svg": "/static/media/telefono-fijo.7eee5fc956100ab23aa8ec335b87f6ac.svg",
+    "static/media/logo.svg": "/static/media/logo.15c47bd3fe191dda80f07692bcbc98f0.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.df607ca1ac3fa4bb32ff05fb755ab860.svg",
+    "index.html": "/index.html",
+    "main.390e60e0.css.map": "/static/css/main.390e60e0.css.map",
+    "main.b3e2635d.js.map": "/static/js/main.b3e2635d.js.map",
+    "787.b75b6956.chunk.js.map": "/static/js/787.b75b6956.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.390e60e0.css",
+    "static/js/main.b3e2635d.js"
+  ]
+}
